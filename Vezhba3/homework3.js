@@ -93,3 +93,108 @@ if (averageMark < 60) {
 } else {
   console.log(averageMark + "You've been graded with an A");
 }
+
+// 4. For a given hour, print out the corresponding greeting (Good morning, Good afternoon, Good evening).
+
+let hour = 24;
+
+if (hour < 12) {
+  console.log("Good morning");
+} else if (hour >= 12 && hour <= 17) {
+  console.log("Good afternoon");
+} else if (hour >= 17 && hour <= 24) {
+  console.log("Good evening");
+}
+
+// 5. For a given day, print out whether it is a day of the work week or weekend.
+
+let givenDay = "Saturday";
+
+if (
+  givenDay === "Monday" ||
+  givenDay === "Tuesday" ||
+  givenDay === "Wednesday" ||
+  givenDay === "Thursday" ||
+  givenDay === "Friday"
+) {
+  console.log("It is the workweek");
+} else if (givenDay === "Saturday" || givenDay === "Sunday") {
+  console.log("It is the weekend");
+} else {
+  //if user types something other than days
+  console.log("invalid input");
+}
+
+// switch (givenMonth) {
+//   case "Monday":
+//   case "Tuesday":
+//   case "Wednesday":
+//   case "Thursday":
+//   case "Friday": {
+//     console.log("It is the workweek");
+//     break;
+//   }
+//   case "Saturday":
+//   case "Sunday": {
+//     console.log("It is the weekend");
+//     break;
+//   }
+//   default: {
+//     console.log("invalid input");
+//     break;
+//   }
+// }
+
+// 6. For a given month, print out in which season it belongs.
+
+let givenMonth = "December";
+
+if (
+  givenMonth === "December" ||
+  givenMonth === "January" ||
+  givenMonth === "February"
+) {
+  console.log("It is Winter");
+} else if (
+  givenMonth === "March" ||
+  givenMonth === "April" ||
+  givenMonth === "May"
+) {
+  console.log("It is Spring");
+} else if (
+  givenMonth === "June" ||
+  givenMonth === "July" ||
+  givenMonth === "August"
+) {
+  console.log("It is Summer");
+} else if (
+  givenMonth === "September" ||
+  givenMonth === "October" ||
+  givenMonth === "November"
+) {
+  console.log("It is Autumn");
+} else {
+  //if user types something other than months
+  console.log("invalid input");
+}
+
+// ) {
+//   console.log("It is Winter");
+// } else if (givenMonth === "March" ||
+// givenMonth === "April" ||
+// givenMonth === "May" ||) {
+//   console.log("It is Spring")
+
+// } else if ( givenMonth === "June" ||
+// givenMonth === "July" ||
+// givenMonth === "August" ||) {
+//    console.log("It is Summer")
+// } else if (
+//       givenMonth === "December" ||
+//       givenMonth === "January" ||
+//       givenMonth === "February" ||
+//     ) {
+//       console.log("It is Autumn")
+// } else {
+//   console.log("invalid input");
+// }
