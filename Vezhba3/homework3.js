@@ -177,24 +177,3 @@ if (
   //if user types something other than months
   console.log("invalid input");
 }
-
-// ) {
-//   console.log("It is Winter");
-// } else if (givenMonth === "March" ||
-// givenMonth === "April" ||
-// givenMonth === "May" ||) {
-//   console.log("It is Spring")
-
-// } else if ( givenMonth === "June" ||
-// givenMonth === "July" ||
-// givenMonth === "August" ||) {
-//    console.log("It is Summer")
-// } else if (
-//       givenMonth === "December" ||
-//       givenMonth === "January" ||
-//       givenMonth === "February" ||
-//     ) {
-//       console.log("It is Autumn")
-// } else {
-//   console.log("invalid input");
-// }
