@@ -1,7 +1,7 @@
 // 1. Write a JavaScript conditional statement to sort three numbers. Print the result.
-let a = 32;
-let b = -45;
-let c = 7;
+let a = 1;
+let b = 1;
+let c = 2;
 
 if (a > b && a > c) {
   // nested if checks if b is bigger than c then order goes (a,b,c)
@@ -41,19 +41,19 @@ if (a > b && a > c) {
 
 // 2. Write a JavaScript conditional statement to find the largest of five numbers. Print the result.
 
-let d = -2;
-let e = 0;
+let d = -4;
+let e = 2;
 let f = -6;
 let g = 45;
-let h = 15;
+let h = 7;
 
-if (d > e && d > f && d > g && d > h) {
+if (d >= e && d >= f && d >= g && d >= h) {
   console.log(d);
-} else if (e > d && e > f && e > g && e > h) {
+} else if (e >= d && e >= f && e >= g && e >= h) {
   console.log(e);
-} else if (f > d && f > e && f > g && f > h) {
+} else if (f >= d && f >= e && f >= g && f >= h) {
   console.log(f);
-} else if (g > d && g > e && g > f && g > h) {
+} else if (g >= d && g >= e && g >= f && g >= h) {
   console.log(g);
 } else {
   console.log(h);
@@ -125,25 +125,25 @@ if (
   console.log("invalid input");
 }
 
-// switch (givenMonth) {
-//   case "Monday":
-//   case "Tuesday":
-//   case "Wednesday":
-//   case "Thursday":
-//   case "Friday": {
-//     console.log("It is the workweek");
-//     break;
-//   }
-//   case "Saturday":
-//   case "Sunday": {
-//     console.log("It is the weekend");
-//     break;
-//   }
-//   default: {
-//     console.log("invalid input");
-//     break;
-//   }
-// }
+switch (givenMonth) {
+  case "Monday":
+  case "Tuesday":
+  case "Wednesday":
+  case "Thursday":
+  case "Friday": {
+    console.log("It is the workweek");
+    break;
+  }
+  case "Saturday":
+  case "Sunday": {
+    console.log("It is the weekend");
+    break;
+  }
+  default: {
+    console.log("invalid input");
+    break;
+  }
+}
 
 // 6. For a given month, print out in which season it belongs.
 
