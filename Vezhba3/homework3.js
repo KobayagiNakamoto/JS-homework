@@ -36,7 +36,7 @@ if (a > b && a > c) {
 } else if (b == c && b > a) {
   console.log(b + "," + c + "," + a);
 } else {
-  console.log("where is the order if everybody is equal?");
+  console.log("No order if everybody is equal");
 }
 
 // 2. Write a JavaScript conditional statement to find the largest of five numbers. Print the result.
