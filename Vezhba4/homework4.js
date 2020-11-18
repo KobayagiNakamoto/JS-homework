@@ -165,7 +165,7 @@ let brain = fried
 console.log("ask in class")
 */
 
-switch (true) {
+/* switch (true) {
   case person_1 < person_2 && person_1 < person_3: {
     console.log(person.firstName + " is the youngest ");
     break;
@@ -180,4 +180,58 @@ switch (true) {
   }
   default:
     console.log("They are the same age");
-}
+} */
+
+  switch (true) {
+    // checks if they are the same age
+    case person_1 === person_2 && person_1 === person_3 && person_2 === person_3: {
+      console.log("They are the same age");
+      break;
+    }
+    // checks if person 1 is the youngest
+    case person_1 < person_2 && person_1 < person_3:{
+        console.log(person.firstName + " is the youngest")
+        break;
+    }
+    // checks if person 2 is the youngest
+    case person_2 < person_1 && person_2 < person_3: {
+        console.log(personTwo.firstName + " is the youngest ")
+        break;
+    }
+    // checks if person 3 is the youngest
+    case person_3 < person_1 && person_3 < person_2: {
+        console.log(personThree.firstName + " is the youngest")
+        break;
+    }
+    //checks if person 1 and person 2 are the same age, and are older than person 3
+    case person_1 === person_2 && person_1 > person_3 && person_2 > person_3: {
+        console.log(personThree.firstName + " is the youngest")
+        break;
+    }
+    //checks if person 1 and person 2 are the same age, and are younger than person 3
+    case person_1 === person_2 && person_1 < person_3 && person_2 < person_3: {
+        console.log(person.firstName + " and " + personTwo.firstName + " are younger than " + personThree.firstName)
+        break;
+    }
+    //checks if person 2 and person 3 are the same age, and are older than person 1
+    case person_2 === person_3 && person_2 > person_1 && person_3 > person_1: {
+        console.log(person.firstName + " is the youngest")
+        break;
+    }
+    //checks if person 2 and person 3 are the same age, and are younger than person 1
+    case person_2 === person_3 && person_2 < person_1 && person_3 < person_1: {
+        console.log(personTwo.firstName + " and " + personThree.firstName + " are younger than " + person.firstName)
+        break;
+    } 
+     //checks if person 1 and person 3 are the same age, and are older than person 2
+    case person_1 === person_3 && person_1 > person_2 && person_3 > person_2: {
+        console.log(personTwo.firstName + " is the youngest ")
+        break;
+    } 
+    //checks if person 1 and person 3 are the same age, and are younger than person 2
+    case person_1 === person_3 && person_1 < person_2 && person_3 < person_2: {
+        console.log(person.firstName + " and " + personThree.firstName + " are younger than " + personTwo.firstName)
+        break;
+    } 
+
+} 
