@@ -116,7 +116,7 @@ console.log(`
 console.log(`
 `);
 
-// not sure if this was needed, but it checks if students is an array type
+
 let checkArr = Array.isArray(students);
 console.log(checkArr);
 
